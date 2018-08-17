@@ -1,5 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { NgxDatatableModule } from "@swimlane/ngx-datatable";
 
 import { AppComponent } from "./app.component";
 import { FellowshipUndertakingComponent } from "./fellowship-undertaking/fellowship-undertaking.component";
@@ -11,6 +13,8 @@ import { FellowshipUndertakingComponent } from "./fellowship-undertaking/fellows
     ],
     imports: [
         BrowserModule,
+        FontAwesomeModule,
+        NgxDatatableModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
