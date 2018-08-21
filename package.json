@@ -3,8 +3,10 @@
     "version": "0.1.0",
     "author": "Heather MacPhail",
     "scripts": {
-        "ng": "ng",
-        "start": "ng serve --port 4242"
+        "start": "ng serve --port 4242",
+        "build": "ng build --prod --base-href \"/one-ring-fellowship/\"",
+        "ng-pages": "npx ngh --dir=dist/one-ring-fellowship",
+        "publish": "yarn build && yarn ng-pages"
     },
     "repository": {
         "type": "git",
