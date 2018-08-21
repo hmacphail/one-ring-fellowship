@@ -1,3 +1,39 @@
-<p>
-    fellowship-undertaking works!
-</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Fellowship Undertakings</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- TODO: Add custom css classes to definition -->
+            <ngx-datatable #undertakingTable class="bootstrap expandable"
+                [columns]="columns"
+                [columnMode]="'flex'"
+                [headerHeight]="50"
+                [footerHeight]="60"
+                [rowHeight]="'auto'"
+                [limit]="20"
+                [reorderable]="false"
+                [rows]="allUndertakings">
+                <ngx-datatable-row-detail [rowHeight]="40" #detailRow (toggle)="onDetailToggle($event)">
+                    <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
+                      <div>
+                        <div>{{ row.reqs }}</div>
+                        <div>{{ row.roll }}</div>
+                      </div>
+                    </ng-template>
+                </ngx-datatable-row-detail>
+                <ng-template #expandRow let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+                    <a href="#"
+                        [class.datatable-icon-right]="!expanded"
+                        [class.datatable-icon-down]="expanded"
+                        title="Expand/Collapse Row"
+                        (click)="toggleExpandRow(row)">
+                    </a>
+                </ng-template>
+            </ngx-datatable>
+        </div>
+
+    </div>
+</div>
