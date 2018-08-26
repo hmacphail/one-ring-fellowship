@@ -73,3 +73,5 @@ The weapon’s Injury rating is raised by 2.
 
 This upgrade may be applied only once, to any one
 weapon type.
+
+<!-- TODO: add Gandalf rune >

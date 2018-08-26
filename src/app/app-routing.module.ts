@@ -5,6 +5,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { DefaultRewardsComponent } from "./components/default-rewards/default-rewards.component";
 import { DefaultVirtuesComponent } from "./components/default-virtues/default-virtues.component";
 import { FellowshipUndertakingComponent } from "./components/fellowship-undertaking/fellowship-undertaking.component";
+import { LevelingCostComponent } from "./components/leveling-cost/leveling-cost.component";
 
 const routes: Routes = [
     {
@@ -22,6 +23,10 @@ const routes: Routes = [
     {
         path: "rewards",
         component: DefaultRewardsComponent,
+    },
+    {
+        path: "levels",
+        component: LevelingCostComponent,
     },
     {
         path: "**",

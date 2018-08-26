@@ -14,6 +14,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { DefaultRewardsComponent } from "./components/default-rewards/default-rewards.component";
 import { DefaultVirtuesComponent } from "./components/default-virtues/default-virtues.component";
 import { FellowshipUndertakingComponent } from "./components/fellowship-undertaking/fellowship-undertaking.component";
+import { LevelingCostComponent } from "./components/leveling-cost/leveling-cost.component";
 import { UndertakingSearchPipe } from "./pipes/undertaking-search.pipe";
 
 /* Structure */
@@ -27,8 +28,9 @@ import { NavComponent } from "./nav/nav.component";
         DefaultRewardsComponent,
         DefaultVirtuesComponent,
         FellowshipUndertakingComponent,
-        NavComponent,
+        LevelingCostComponent,
         UndertakingSearchPipe,
+        NavComponent,
     ],
     imports: [
         AppRoutingModule,

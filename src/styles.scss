@@ -1,7 +1,8 @@
-$aniron-ttf-font-path: "/assets/fonts/aniron.tff";
-$aniron-woff-font-path: "/assets/fonts/aniron.woff";
+$aniron-ttf-font-path: '/assets/fonts/aniron.tff';
+$aniron-woff-font-path: '/assets/fonts/aniron.woff';
 $font-family-brand: 'aniron';
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 @font-face {
     font-family: $font-family-brand;
     src: url($aniron-woff-font-path) format('woff'),
@@ -11,11 +12,12 @@ $font-family-brand: 'aniron';
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #f3f3f3;
 }
 
-h2 {
-    font-family: 'aniron', serif;
+h2, h4 {
+    font-family: 'aniron', sans-serif;
 }
 
 a {
