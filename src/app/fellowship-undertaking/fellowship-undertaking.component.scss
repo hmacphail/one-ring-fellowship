@@ -1,4 +1,22 @@
 // @import "datatable";
 @import '~@swimlane/ngx-datatable/release/index.css';
-@import '~@swimlane/ngx-datatable/release/themes/bootstrap.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
 @import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+// TODO: set default width and/or different styles based on screen width
+// @media screen and (max-width: 800px) {
+//     .desktop-hidden {
+//         display: initial;
+//     }
+//     .mobile-hidden {
+//         display: none;
+//     }
+// }
+// @media screen and (min-width: 800px) {
+//     .desktop-hidden {
+//         display: none;
+//     }
+//     .mobile-hidden {
+//         display: initial;
+//     }
+// }

@@ -1,6 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+$aniron-ttf-font-path: "/assets/fonts/aniron.tff";
+$aniron-woff-font-path: "/assets/fonts/aniron.woff";
+$font-family-brand: 'aniron';
+
+@font-face {
+    font-family: $font-family-brand;
+    src: url($aniron-woff-font-path) format('woff'),
+        url($aniron-ttf-font-path) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-family: 'aniron', serif;
 }
 
 a {
