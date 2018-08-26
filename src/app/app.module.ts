@@ -2,15 +2,21 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 
+/* External Modules */
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxDatatableModule } from "@swimlane/ngx-datatable";
 
-import { AppRoutingModule } from "./app-routing.module";
+/* Components */
 import { AppComponent } from "./app.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
-import { DefaultRewardsComponent } from "./default-rewards/default-rewards.component";
-import { DefaultVirtuesComponent } from "./default-virtues/default-virtues.component";
-import { FellowshipUndertakingComponent } from "./fellowship-undertaking/fellowship-undertaking.component";
+import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { DefaultRewardsComponent } from "./components/default-rewards/default-rewards.component";
+import { DefaultVirtuesComponent } from "./components/default-virtues/default-virtues.component";
+import { FellowshipUndertakingComponent } from "./components/fellowship-undertaking/fellowship-undertaking.component";
+import { UndertakingSearchPipe } from "./pipes/undertaking-search.pipe";
+
+/* Structure */
+import { AppRoutingModule } from "./app-routing.module";
+import { NavComponent } from "./nav/nav.component";
 
 @NgModule({
     declarations: [
@@ -19,6 +25,8 @@ import { FellowshipUndertakingComponent } from "./fellowship-undertaking/fellows
         DefaultRewardsComponent,
         DefaultVirtuesComponent,
         FellowshipUndertakingComponent,
+        NavComponent,
+        UndertakingSearchPipe,
     ],
     imports: [
         AppRoutingModule,

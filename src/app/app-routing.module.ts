@@ -1,10 +1,10 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
-import { DashboardComponent } from "./dashboard/dashboard.component";
-import { DefaultRewardsComponent } from "./default-rewards/default-rewards.component";
-import { DefaultVirtuesComponent } from "./default-virtues/default-virtues.component";
-import { FellowshipUndertakingComponent } from "./fellowship-undertaking/fellowship-undertaking.component";
+import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { DefaultRewardsComponent } from "./components/default-rewards/default-rewards.component";
+import { DefaultVirtuesComponent } from "./components/default-virtues/default-virtues.component";
+import { FellowshipUndertakingComponent } from "./components/fellowship-undertaking/fellowship-undertaking.component";
 
 const routes: Routes = [
     {
