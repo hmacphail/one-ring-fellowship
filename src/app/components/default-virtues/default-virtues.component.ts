@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Title } from "@angular/platform-browser";
 
 @Component({
     selector: "app-default-virtues",
@@ -7,9 +8,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class DefaultVirtuesComponent implements OnInit {
 
-    constructor() { }
+    title: string = "Virtues";
+
+    constructor(private titleService: Title) { }
 
     ngOnInit() {
+        this.titleService.setTitle(`One Ring | ${this.title}`);
     }
 
 }

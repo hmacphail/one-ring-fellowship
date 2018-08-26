@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
@@ -5,6 +6,7 @@ import { RouterModule } from "@angular/router";
 /* External Modules */
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxDatatableModule } from "@swimlane/ngx-datatable";
+import { MarkdownModule } from "ngx-markdown";
 
 /* Components */
 import { AppComponent } from "./app.component";
@@ -33,6 +35,8 @@ import { NavComponent } from "./nav/nav.component";
         BrowserModule,
         FontAwesomeModule,
         NgxDatatableModule,
+        HttpClientModule,
+        MarkdownModule.forRoot({ loader: HttpClient }),
         RouterModule.forRoot([]),
     ],
     providers: [],

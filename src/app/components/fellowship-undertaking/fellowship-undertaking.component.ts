@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 
-import * as undertakings from "../../assets/undertakings.json";
+import * as undertakings from "../../../assets/undertakings.json";
 
 @Component({
     selector: "fellowship-undertaking",
@@ -22,7 +22,7 @@ export class FellowshipUndertakingComponent implements OnInit {
 
     // TODO: add angular pipe for searching
 
-    constructor(private titleService: Title ) { }
+    constructor(private titleService: Title) { }
 
     ngOnInit() {
         this.titleService.setTitle(`One Ring | ${this.title}`);
