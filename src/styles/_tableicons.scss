@@ -1,0 +1,84 @@
+@import "_colors";
+
+$fa-angle-double-left: "\f100";
+$fa-angle-double-right: "\f101";
+$fa-angle-down: "\f107";
+$fa-angle-left: "\f104";
+$fa-angle-right: "\f105";
+$fa-angle-up: "\f106";
+$fa-caret-down: "\f0d7";
+$fa-caret-up: "\f0d8";
+$fa-sort: "\f0dc";
+$fa-sort-down: "\f0dd";
+$fa-sort-up: "\f0de";
+
+// TODO: fix load order of icons or add loading screen to hide ascii errors
+
+%font-awesome {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    // font: normal normal normal 14px;
+    font-style: normal;
+}
+
+.sort-btn, .pager i {
+    @extend %font-awesome;
+}
+
+// Pagination
+.datatable-icon-prev:before {
+    content: $fa-angle-double-left;
+}
+.datatable-icon-left:before {
+    content: $fa-angle-left;
+}
+.datatable-icon-right:before {
+    content: $fa-angle-right;
+}
+.datatable-icon-skip:before {
+    content: $fa-angle-double-right;
+}
+
+// Sorting
+.sortable {
+    .sort-btn {
+        padding-left: 5px;
+        color: $grey-lighter;
+        &:before {
+            content: $fa-sort;
+        }
+    }
+    .datatable-icon-down, .datatable-icon-up {
+        &:before {
+            margin-right: -8px;
+            color: $grey-lighter;
+        }
+        &:after {
+            color: $grey;
+        }
+    }
+    .datatable-icon-down:before, .datatable-icon-up:after {
+        content: $fa-sort-down;
+    }
+    .datatable-icon-down:after, .datatable-icon-up:before {
+        content: $fa-sort-up;
+    }
+}
+
+// Row Detail
+.datatable-body-cell {
+    .datatable-icon-down, .datatable-icon-up {
+        @extend %font-awesome;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .datatable-icon-down:before {
+        content: $fa-angle-down;
+    }
+    .datatable-icon-up:before {
+        content: $fa-angle-up;
+    }
+}

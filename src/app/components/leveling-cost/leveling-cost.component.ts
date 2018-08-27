@@ -10,12 +10,9 @@ export class LevelingCostComponent implements OnInit {
 
     title: string = "Leveling";
 
-    // TODO: add diamond graphics
-
     constructor(private titleService: Title) { }
 
     ngOnInit() {
         this.titleService.setTitle(`One Ring | ${this.title}`);
     }
-
 }

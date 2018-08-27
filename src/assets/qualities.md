@@ -60,7 +60,7 @@ Sharp and well-balanced, this weapon is more likely to
 produce a piercing blow when hitting its target.
 
 The weapon’s Edge rating is reduced by 1 (note that an
-Edge rating of (Gandalf) becomes a rating of 10).
+Edge rating of ![gandalf](assets/images/gandalf.png "Gandalf") becomes a rating of 10).
 
 This upgrade may be applied only once, to any one
 weapon type.
@@ -73,5 +73,3 @@ The weapon’s Injury rating is raised by 2.
 
 This upgrade may be applied only once, to any one
 weapon type.
-
-<!-- TODO: add Gandalf rune >

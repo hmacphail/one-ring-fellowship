@@ -1,15 +1,5 @@
-$aniron-ttf-font-path: '/assets/fonts/aniron.tff';
-$aniron-woff-font-path: '/assets/fonts/aniron.woff';
-$font-family-brand: 'aniron';
-
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-@font-face {
-    font-family: $font-family-brand;
-    src: url($aniron-woff-font-path) format('woff'),
-        url($aniron-ttf-font-path) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "_fonts";
 
 body {
     font-family: 'Libre Baskerville', serif;
@@ -17,9 +7,5 @@ body {
 }
 
 h2, h4 {
-    font-family: 'aniron', sans-serif;
-}
-
-a {
-    text-decoration: none;
+    font-family: 'Aniron', sans-serif;
 }
