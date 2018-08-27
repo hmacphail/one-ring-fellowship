@@ -1,7 +1,19 @@
 <div class="container-fluid">
-    <div class="row">
+    <div class="row header">
         <div class="col-sm-12">
             <h2>Fellowship Undertakings</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group input-group search-filter-group">
+                <input type="search" class="form-control" placeholder="Enter Search Term" [(ngModel)]="tableSearchBox"/>
+                <div class="input-group-append">
+                    <span class="input-group-text" aria-hidden="true">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -13,9 +25,9 @@
                 [headerHeight]="50"
                 [footerHeight]="60"
                 [rowHeight]="'auto'"
-                [limit]="20"
+                [limit]="15"
                 [reorderable]="false"
-                [rows]="allUndertakings">
+                [rows]="allUndertakings | undertakingSearch: tableSearchBox">
                 <ngx-datatable-row-detail [rowHeight]="40" #detailRow>
                     <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
                       <div>

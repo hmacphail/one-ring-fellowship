@@ -1,10 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 
 @Component({
     selector: "app-default-virtues",
     templateUrl: "./default-virtues.component.html",
     styleUrls: ["./default-virtues.component.scss"],
+    encapsulation: ViewEncapsulation.None,
 })
 export class DefaultVirtuesComponent implements OnInit {
 

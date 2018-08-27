@@ -4,9 +4,17 @@
 @import '~@swimlane/ngx-datatable/release/index.css';
 @import '~@swimlane/ngx-datatable/release/themes/material.css';
 
+.header {
+    margin-bottom: 1em;
+}
+
 // Pagination
 .page-count {
     display: none;
+}
+
+.form-control::placeholder {
+    font-size: 0.8rem;
 }
 
 // TODO: set default width and/or different styles based on screen width
