@@ -1,7 +1,7 @@
-## Rewards (Qualities)
-There are several types of Qualities, allowing players to
+## Rewards (Valor)
+There are several types of Rewards, allowing players to
 raise the effectiveness of their armour, helm, shield or
-weapon. Most Qualities may be applied more than once
+weapon. Most Rewards (Qualities) may be applied more than once
 to the same piece of gear, unless the upgrade is specifically
 highlighted as unique.
 
@@ -25,7 +25,7 @@ can be selected multiple times (always up to a maximum
 of 3 Qualities per item).
 
 #### Close-fitting (armour or headpiece)
-A skilful smith has made this piece of protective equipment
+A skillful smith has made this piece of protective equipment
 more difficult to overcome with a piercing blow.
 
 The selected item’s Protection rating gets a bonus of +1.
