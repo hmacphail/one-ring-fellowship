@@ -2,6 +2,7 @@
     "name": "one-ring-fellowship",
     "version": "0.1.0",
     "author": "Heather MacPhail",
+    "description": "One Ring RPG Fellowship Phase Helper",
     "scripts": {
         "start": "ng serve --port 4242",
         "build": "ng build --prod --base-href \"/one-ring-fellowship/\"",

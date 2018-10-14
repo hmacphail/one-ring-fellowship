@@ -19,8 +19,7 @@ export class FellowshipUndertakingComponent implements OnInit {
     allUndertakings = [];
 
     expanded: any = {};
-
-    // TODO: add angular pipe for searching
+    tableSearchBox: string;
 
     constructor(private titleService: Title) { }
 
