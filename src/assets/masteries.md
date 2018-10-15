@@ -1,4 +1,3 @@
-## Virtues (Wisdom)
 These talents can be acquired by adventurers from any
 culture. Each Virtue can be acquired more than once by
 the same character.

@@ -15,18 +15,30 @@ const routes: Routes = [
     {
         path: "undertaking",
         component: FellowshipUndertakingComponent,
+        data: {
+            title: "Fellowship Undertakings",
+        },
     },
     {
         path: "virtues",
         component: DefaultVirtuesComponent,
+        data: {
+            title: "Virtues (Wisdom)",
+        },
     },
     {
         path: "rewards",
         component: DefaultRewardsComponent,
+        data: {
+            title: "Rewards (Valour)",
+        },
     },
     {
         path: "levels",
         component: LevelingCostComponent,
+        data: {
+            title: "Levels",
+        },
     },
     {
         path: "**",

@@ -1,4 +1,3 @@
-## Rewards (Valor)
 There are several types of Rewards, allowing players to
 raise the effectiveness of their armour, helm, shield or
 weapon. Most Rewards (Qualities) may be applied more than once
