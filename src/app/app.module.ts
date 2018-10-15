@@ -6,6 +6,7 @@ import { RouterModule } from "@angular/router";
 
 /* External Modules */
 // import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgxDatatableModule } from "@swimlane/ngx-datatable";
 import { MarkdownModule } from "ngx-markdown";
 
@@ -19,8 +20,8 @@ import { LevelingCostComponent } from "./components/leveling-cost/leveling-cost.
 import { UndertakingSearchPipe } from "./pipes/undertaking-search.pipe";
 
 /* Structure */
+import { MATERIAL_COMPONENTS } from "./angular-material";
 import { AppRoutingModule } from "./app-routing.module";
-import { NavComponent } from "./nav/nav.component";
 
 @NgModule({
     declarations: [
@@ -31,7 +32,6 @@ import { NavComponent } from "./nav/nav.component";
         FellowshipUndertakingComponent,
         LevelingCostComponent,
         UndertakingSearchPipe,
-        NavComponent,
     ],
     imports: [
         AppRoutingModule,
@@ -39,6 +39,8 @@ import { NavComponent } from "./nav/nav.component";
         FormsModule,
         // FontAwesomeModule,
         NgxDatatableModule,
+        BrowserAnimationsModule,
+        ...MATERIAL_COMPONENTS,
         HttpClientModule,
         MarkdownModule.forRoot({ loader: HttpClient }),
         RouterModule.forRoot([]),

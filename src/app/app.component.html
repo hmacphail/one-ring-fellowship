@@ -1,4 +1,25 @@
-<nav></nav>
-<div id="app-root">
-    <router-outlet></router-outlet>
+<div id="app-root" class="container" [class.example-is-mobile]="mobileQuery.matches">
+    <mat-toolbar color="primary" class="toolbar">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <h1 class="app-name">One Ring</h1>
+    </mat-toolbar>
+
+    <mat-sidenav-container color="primary" class="sidenav-container"
+        [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'"
+            [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+            <mat-nav-list>
+                <a mat-list-item (click)="goTo(nav.route)" *ngFor="let nav of navMenu">
+                    <i class="fas fa-{{nav.icon}}"></i>
+                    <span>{{nav.title}}</span>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="sidenav-content">
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
 </div>
