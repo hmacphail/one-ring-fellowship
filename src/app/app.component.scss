@@ -10,10 +10,6 @@
     right: 0;
 }
 
-.toolbar {
-    @include mat-elevation(6);
-}
-
 .is-mobile .toolbar {
     position: fixed;
     /* Make sure the toolbar will stay on top of the content as it scrolls past. */
@@ -28,6 +24,7 @@ h1.app-name {
     /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
         causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
     flex: 1;
+    // background: none;
 }
 
 .sidenav-container i {
