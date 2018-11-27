@@ -1,13 +1,23 @@
 // @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "~@fortawesome/fontawesome-pro/css/all.css";
 
+@import "_colors";
 @import "_fonts";
 
 body {
-    font-family: 'Libre Baskerville', serif;
-    background-color: #fafafa;
+    @include font-body;
+    background-color: $background-color;
 }
 
 h2, h4 {
-    font-family: 'Aniron', sans-serif;
+    @include font-heading;
+}
+
+// Override default Material Angular styles
+.app-name {
+    @include font-heading;
+}
+
+.mat-tab-label, .mat-tab-link, .mat-list-item, .mat-form-field {
+    @include font-body;
 }

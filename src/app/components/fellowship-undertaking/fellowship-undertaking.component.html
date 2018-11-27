@@ -1,50 +1,38 @@
-<div class="container-fluid">
-    <!-- <div class="row header">
-        <div class="col-sm-12">
-            <h2>Fellowship Undertakings</h2>
-        </div>
-    </div> -->
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group input-group search-filter-group">
-                <input type="search" class="form-control" placeholder="Enter Search Term" [(ngModel)]="tableSearchBox"/>
-                <div class="input-group-append">
-                    <span class="input-group-text" aria-hidden="true">
-                        <i class="fas fa-search"></i>
-                    </span>
-                </div>
-            </div>
-        </div>
+<div class="fs-container">
+    <div class="fs-search-box">
+        <mat-form-field class="full-width">
+            <input matInput type="search" placeholder="Enter Search Term" [(ngModel)]="tableSearchBox">
+            <button matSuffix mat-button mat-icon-button>
+                <i class="far fa-search"></i>
+            </button>
+        </mat-form-field>
     </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <!-- TODO: Add custom css classes to definition -->
-            <ngx-datatable #undertakingTable class="material expandable"
-                [columns]="columns"
-                [columnMode]="'flex'"
-                [headerHeight]="50"
-                [footerHeight]="60"
-                [rowHeight]="'auto'"
-                [limit]="15"
-                [reorderable]="false"
-                [rows]="allUndertakings | undertakingSearch: tableSearchBox">
-                <ngx-datatable-row-detail [rowHeight]="40" #detailRow>
-                    <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
-                      <div>
-                        <div>{{ row.reqs }}</div>
-                        <div>{{ row.roll }}</div>
-                      </div>
-                    </ng-template>
-                </ngx-datatable-row-detail>
-                <ng-template #expandRow let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
-                    <a [class.datatable-icon-down]="!expanded"
-                        [class.datatable-icon-up]="expanded"
-                        title="Expand/Collapse Row"
-                        (click)="toggleExpandRow(row)">
-                    </a>
+    <div class="fs-table">
+        <!-- TODO: Add custom css classes to definition -->
+        <ngx-datatable #undertakingTable class="material expandable"
+            [columns]="columns"
+            [columnMode]="'flex'"
+            [headerHeight]="50"
+            [footerHeight]="60"
+            [rowHeight]="'auto'"
+            [limit]="15"
+            [reorderable]="false"
+            [rows]="allUndertakings | undertakingSearch: tableSearchBox">
+            <ngx-datatable-row-detail [rowHeight]="40" #detailRow>
+                <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
+                    <div>
+                    <div>{{ row.reqs }}</div>
+                    <div>{{ row.roll }}</div>
+                    </div>
                 </ng-template>
-            </ngx-datatable>
-        </div>
-
+            </ngx-datatable-row-detail>
+            <ng-template #expandRow let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+                <a [class.datatable-icon-down]="!expanded"
+                    [class.datatable-icon-up]="expanded"
+                    title="Expand/Collapse Row"
+                    (click)="toggleExpandRow(row)">
+                </a>
+            </ng-template>
+        </ngx-datatable>
     </div>
 </div>

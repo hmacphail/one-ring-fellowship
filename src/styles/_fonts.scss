@@ -6,3 +6,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@mixin font-heading {
+    font-family: 'Aniron', sans-serif !important;
+}
+
+@mixin font-body {
+    font-family: 'Libre Baskerville', serif !important;
+}
