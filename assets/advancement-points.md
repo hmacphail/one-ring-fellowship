@@ -1,5 +1,3 @@
-#### Advancement Points Costs
-
 New level to attain | Cost | Favoured Skill Cost
 --- | :---: | :---:
 &#9830; | 4 | 3

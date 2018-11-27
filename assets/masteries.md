@@ -1,6 +1,5 @@
-## Virtues (Masteries)
 These talents can be acquired by adventurers from any
-culture. Each Mastery can be acquired more than once by
+culture. Each Virtue can be acquired more than once by
 the same character.
 
 
@@ -34,7 +33,7 @@ Raise your close combat Damage rating by 1.
 #### Gifted
 Adventuring is honing your inborn talents.
 
-Raise one of your favoured Attributes (see page 85) by one.
+Raise one of your favoured Attributes (see page 85) by 1.
 
 #### Resilience
 Your determination and stamina have improved through

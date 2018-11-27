@@ -1,5 +1,3 @@
-#### Raise Standing
-
 Standing to attain | Treasure points
 :---: | :---:
 1 | 12
