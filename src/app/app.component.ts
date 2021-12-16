@@ -1,5 +1,3 @@
-import "hammerjs";
-
 import { MediaMatcher } from "@angular/cdk/layout";
 import { ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild } from "@angular/core";
 import { ActivatedRoute, PRIMARY_OUTLET, Router } from "@angular/router";
