@@ -9,7 +9,7 @@ import { ActivatedRoute, PRIMARY_OUTLET, Router } from "@angular/router";
 })
 export class AppComponent implements OnInit, OnDestroy {
     readonly ROUTE_DATA_TITLE = "title";
-    readonly TITLE_DEFAULT = "One Ring";
+    readonly TITLE_DEFAULT = "One Ring RPG";
 
     @ViewChild("sidenav") sideNav;
     navMenu = [

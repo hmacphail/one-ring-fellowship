@@ -4,7 +4,7 @@
   "author": "Heather MacPhail",
   "description": "One Ring RPG Fellowship Phase Helper",
   "scripts": {
-    "start": "ng serve --port 4242",
+    "start": "ng serve -c local --port 4242",
     "build": "ng build --prod --base-href \"/one-ring-fellowship/\"",
     "ng-pages": "npx ngh --dir=dist/one-ring-fellowship",
     "publish": "npm build && npm ng-pages"
