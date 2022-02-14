@@ -7,7 +7,7 @@
     "start": "ng serve -c local --port 4242",
     "build": "ng build --prod --base-href \"/one-ring-fellowship/\"",
     "ng-pages": "npx ngh --dir=dist/one-ring-fellowship",
-    "publish": "npm build && npm ng-pages"
+    "publish": "npm run build && npm run ng-pages"
   },
   "repository": {
     "type": "git",
